@@ -1,0 +1,128 @@
+.container {
+  text-align: center;
+  padding: 50px;
+  color: #ffffff;
+  background: url("C:\Users\Faisal\Downloads\pexels-matthias-zomer-422218.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;  
+}
+
+  
+  .header {
+    margin-bottom: 50px;
+  }
+  
+  .headerTitle {
+    font-size: 4rem;
+    color: #5a5a5a;
+    font-weight: bold;
+  }
+  
+  .headerSubtitle {
+    font-size: 1.5rem;
+    color: #6d6d6d;
+    margin-top: 10px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .feature {
+    width: 30%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .featureTitle {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .featureDescription {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .ownerTitle {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 5px;
+  }
+  
+  .ownerName,
+  .ownerContact {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
+  
+  .footerText {
+    font-size: 0.8rem;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #575757;
+    padding-top: 10px;
+  }
+  
+  /* Media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    .headerTitle {
+      font-size: 2rem;
+    }
+  
+    .headerSubtitle {
+      font-size: 1rem;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .featureTitle {
+      font-size: 1.5rem;
+    }
+  
+    .featureDescription {
+      font-size: 0.9rem;
+    }
+  
+    .ownerTitle {
+      font-size: 1rem;
+    }
+  
+    .ownerName,
+    .ownerContact {
+      font-size: 0.9rem;
+    }
+  
+    .footerText {
+      font-size: 0.7rem;
+    }
+  }
+  

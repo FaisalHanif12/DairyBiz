@@ -1,0 +1,550 @@
+/* ConsumerKhata.css */
+.consumer-khata-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the close button within the input data field card */
+.form-container {
+  position: relative;
+}
+
+/* Styles for the "Add Baqaya" button */
+.add-baqaya-button {
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.add-baqaya-button:hover {
+  background-color: #c0392b;
+}
+
+/* Add Baqaya Card Styles */
+.add-baqaya-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  position: relative; /* Ensure relative positioning for child elements */
+}
+
+.add-baqaya-card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Increase the margin here to create more space */
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.add-baqaya-card .save-baqaya-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-baqaya-card .save-baqaya-button:hover {
+  background-color: #0056b3;
+}
+
+.add-baqaya-card .error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Close button within Add Baqaya Card */
+.add-baqaya-card .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: #f2f2f2;
+  border-radius: 50%; /* Make the close button circular */
+  border: none;
+  width: 24px; /* Adjust the size of the close button */
+  height: 24px; /* Adjust the size of the close button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-baqaya-card .close-button:hover {
+  background-color: #c0392b;
+}
+
+/* Add margin to move the input fields below the close button */
+.form-container input {
+  margin-top: 20px;
+}
+.form-container .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: #f2f2f2;
+  border-radius: 30px;
+  border-color: #e74c3c;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Updated styles for the input field card */
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input[type="date"],
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.save-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Updated styles for the displaying card */
+.consumer-card {
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.consumer-card p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Shared button styles */
+.button-shared, .manage-buttonn, .add-baqaya-buttonn,  .delete-button, .save-button, .add-button {
+  padding: 7px 10px;
+  font-size: 11px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.update-buttonn{
+  padding: 7px 10px;
+  font-size: 11px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.manage-buttonn  {
+  background-color: #609903;
+}
+.add-baqaya-buttonn 
+{
+  background-color: #e10b0b;
+}
+.manage-buttonn:hover, .add-baqaya-buttonn:hover, .save-button:hover, .add-button:hover {
+  background-color: #000000;
+}
+
+.update-buttonn {
+  background-color: #f39c12;
+}
+
+.update-buttonn:hover {
+  background-color: #d98c10;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+.form-container.wasooli-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.wasooli-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container.wasooli-card input[type="date"],
+.form-container.wasooli-card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the Wasooli card */
+.form-container.wasooli-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.wasooli-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container.wasooli-card input[type="date"],
+.form-container.wasooli-card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container.wasooli-card .error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.form-container.wasooli-card .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: #f2f2f2;
+  border-radius: 50%; /* Make the close button circular */
+  border: none;
+  width: 24px; /* Adjust the size of the close button */
+  height: 24px; /* Adjust the size of the close button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-container.wasooli-card .close-button:hover {
+  background-color: #c0392b;
+}
+
+.form-container.wasooli-card .save-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Adjust the size of the Save button */
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form-container.wasooli-card .save-button:hover {
+  background-color: #0056b3;
+}
+/* CSS for the Beautiful Wasooli displaying card with rounded corners */
+.wasooli-card-horizontal {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; /* Ensure buttons are spaced horizontally */
+  align-items: center;
+  text-align: center;
+  border-radius: 10px; /* Adding rounded corners */
+}
+
+.wasooli-card-horizontal span {
+  margin-right: 10px; /* Adjust spacing between data elements */
+}
+.updatee-button,
+.deletee-button {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.updatee-button {
+  background-color: #e67e22; /* Orange color for the Update button */
+  color: #fff;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .wasooli-card-horizontal {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .wasooli-card-horizontal.update-button,
+  .wasooli-card-horizontal.delete-button {
+    width: 100%; /* Make buttons full width on smaller screens */
+    margin-left: 0; /* Remove margin between buttons */
+  }
+}
+.deletee-button {
+  background-color: #e74c3c; /* Red color for the Delete button */
+  color: #fff;
+   /* Add margin between buttons */
+}
+.confirmation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmation-modal button {
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Specific styles for the "Yes" button */
+.confirmation-modal button.yes-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.confirmation-modal button.yes-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Specific styles for the "No" button */
+.confirmation-modal button.no-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.confirmation-modal button.no-button:hover {
+  background-color: #d32f2f; /* Slightly darker red on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.alert-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.alert-modal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* New styles */
+.content-disabled {
+  pointer-events: none;
+  opacity: 0.4; /* Optional: Reduce opacity to indicate that content is disabled */
+}
+
+/* Ensure the modal is always on top */
+.alert-modal-overlay {
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+.toggle-visibility-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 5px 10px; /* Top and bottom padding 5px, left and right padding 10px */
+  margin: 10px 0; /* 5px margin at the top and bottom */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer/hand icon when hovering over the button */
+  outline: none; /* Remove the outline */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+.toggle-visibility-button:hover {
+  background-color: #45a049; /* Slightly darker green background on hover */
+}
+
+.toggle-visibility-button:focus {
+  box-shadow: 0 0 3px 2px rgba(0, 150, 0, 0.5); /* More pronounced shadow on focus */
+}
+.confirm-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Updated border-radius */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: auto; /* Ensures modal width is auto-adjusted */
+  max-width: 90%; /* Limits maximum width to avoid too wide modal on large screens */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.confirm-modal-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Added border-radius */
+}
+
+.confirm-modal-button:hover {
+  opacity: 0.9;
+}
+
+.confirm-modal-button-yes {
+  background-color: #4CAF50; /* Green */
+}
+
+.confirm-modal-button-no {
+  background-color: #f44336; /* Red */
+}
+
+.global-toggle-buttonnn {
+  padding: 8px 18px; /* Slightly smaller size */
+  font-size: 15px; /* Adjusted font size for a smaller button */
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(to right, #007bff 0%, #00dbde 100%); /* New background color */
+  border: none;
+  border-radius: 25px; /* Slightly less rounded */
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 20px; /* Added margin from the top */
+  display: block; /* Display as block element */
+  width: fit-content; /* Adjust width based on content */
+  margin-left: auto; /* Move the button to the right */
+  margin-right: auto; /* Move the button to the left */
+}
+
+.global-toggle-buttonnn:hover {
+  background-image: linear-gradient(to right, #00dbde 0%, #007bff 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.global-toggle-buttonnn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}

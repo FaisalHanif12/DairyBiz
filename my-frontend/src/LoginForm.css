@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* ... other styles ... */
+
+.background-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6em; /* Large text size */
+    color: rgba(0, 0, 0, 0.7); /* Semi-transparent white */
+    z-index: -1; /* Ensure it's behind other content */
+    user-select: none; /* Prevent text selection */
+    pointer-events: none; /* Prevent blocking interactions */
+    font-family: 'Dancing Script', cursive; /* Example of a stylish font */
+    white-space: nowrap; /* Ensure text stays on a single line */
+  }
+  .background-text {
+    /* ... existing styles ... */
+  
+    /* Adjust font size for different screen sizes */
+    @media (max-width: 768px) { /* For tablets */
+      font-size: 4em;
+    }
+  
+    @media (max-width: 480px) { /* For mobile phones */
+      font-size: 2em;
+    }
+  }
+  
+  /* ... other styles ... */
+  
+.login-form-container {
+    /* This centers the card on the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* This makes sure that the card always stays in the viewport */
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(5px);
+  }
+  
+  .login-form-card {
+    /* Card styling */
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Adjust the width of the form */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Alert styling */
+  .alert-message {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: none; /* Initially hide the alert */
+  }
+  
+  .alert-message.show {
+    display: block; /* Show the alert when needed */
+  }
+  

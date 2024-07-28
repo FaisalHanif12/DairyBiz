@@ -1,0 +1,256 @@
+.expenditure-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.expenditure-title {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.date-display {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.expenditure-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.expenditure-label {
+    text-align: left;
+}
+
+.expenditure-input,
+.date-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Specific styles for the date input */
+.date-input {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    /* Add space above the button */
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+/* ... existing styles ... */
+
+.expenses-display {
+    margin-top: 30px;
+}
+
+.expense-card {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* Removed position: relative; as it's no longer necessary */
+}
+
+/* Style for delete and update buttons */
+.delete-button1,
+.update-button {
+    background-color: #ff4d4d;
+    /* Red color for delete button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Space above the button */
+}
+
+.delete-button1:hover {
+    background-color: #ff3333;
+    /* Slightly darker red on hover */
+}
+
+.update-button {
+    background-color: #4CAF50;
+    /* Green color for update button */
+    color: white;
+    margin-left: 10px;
+    /* Space between the buttons */
+}
+
+.update-button:hover {
+    background-color: #45a049;
+    /* Slightly darker green on hover */
+}
+
+.alert-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.alert-dialog p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alert-dialog button {
+    margin: 0 10px;
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Rounded corners */
+    font-weight: bold;
+}
+
+/* Styling for the 'Yes' button */
+.alert-dialog .confirm-yes {
+    background-color: green;
+}
+
+/* Styling for the 'No' button */
+.alert-dialog .confirm-no {
+    background-color: red;
+}
+
+.expenses-report {
+    background-color: #f8f9fa;
+    /* Light grey background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 20px;
+    /* Spacing inside the container */
+    margin-top: 20px;
+    /* Add space above the container */
+    margin-bottom: 20px;
+    /* Add space below the container */
+}
+
+.expenses-report h4 {
+    color: #333;
+    /* Dark grey color for text */
+    border-bottom: 2px solid #007bff;
+    /* Blue bottom border */
+    padding-bottom: 5px;
+    /* Space between text and border */
+    margin-bottom: 16px;
+    /* Space below the heading */
+}
+
+.expenses-report div {
+    background-color: #fff;
+    /* White background for each entry */
+    padding: 10px;
+    margin-bottom: 8px;
+    /* Space between entries */
+    border-radius: 4px;
+    /* Rounded corners for entries */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow for entries */
+}
+
+/* Style for the total amount */
+.expenses-report div:last-child {
+    font-weight: bold;
+    /* Make the total amount bold */
+    color: #28a745;
+    /* Green color for the total amount */
+}
+
+/* Styling for the month-year headings */
+.expenses-report h3 {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    padding: 10px;
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-top: 20px;
+    /* Space above each heading */
+    margin-bottom: 10px;
+    /* Space below each heading */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    text-align: center;
+    /* Centered text */
+}
+
+/* Styling for the expenses display */
+.expenses-display {
+    margin-bottom: 20px;
+    /* Space below each expenses display section */
+}
+.toggle-button {
+    margin-left: 10px; /* Space from the month-year text */
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 0.9em; /* Adjust font size */
+  }
+  
+  .toggle-button:hover {
+    background-color: #367c39; /* Darker green on hover */
+  }
+  
+ 
+@media (max-width: 768px) {
+    .expenditure-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .expenditure-title {
+        font-size: 1.5rem;
+    }
+
+    .expenditure-input,
+    .date-input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .save-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
