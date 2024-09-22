@@ -3,8 +3,8 @@
  * Licensed under the MIT License.
  */
 
-import { Logger } from "../logger/Logger";
-import { IPerformanceClient } from "../telemetry/performance/IPerformanceClient";
+import { Logger } from "../logger/Logger.js";
+import { IPerformanceClient } from "../telemetry/performance/IPerformanceClient.js";
 
 /**
  * Wraps a function with a performance measurement.
@@ -31,6 +31,14 @@ export const invoke = <T extends Array<any>, U>(
             eventName,
             correlationId
         );
+        if (correlationId) {
+            // Track number of times this API is called in a single request
+            const eventCount = eventName + "CallCount";
+            telemetryClient?.incrementFields(
+                { [eventCount]: 1 },
+                correlationId
+            );
+        }
         try {
             const result = callback(...args);
             inProgressEvent?.end({
@@ -45,9 +53,12 @@ export const invoke = <T extends Array<any>, U>(
             } catch (e) {
                 logger.trace("Unable to print error message.");
             }
-            inProgressEvent?.end({
-                success: false,
-            });
+            inProgressEvent?.end(
+                {
+                    success: false,
+                },
+                e
+            );
             throw e;
         }
     };
@@ -79,6 +90,14 @@ export const invokeAsync = <T extends Array<any>, U>(
             eventName,
             correlationId
         );
+        if (correlationId) {
+            // Track number of times this API is called in a single request
+            const eventCount = eventName + "CallCount";
+            telemetryClient?.incrementFields(
+                { [eventCount]: 1 },
+                correlationId
+            );
+        }
         telemetryClient?.setPreQueueTime(eventName, correlationId);
         return callback(...args)
             .then((response) => {
@@ -95,9 +114,12 @@ export const invokeAsync = <T extends Array<any>, U>(
                 } catch (e) {
                     logger.trace("Unable to print error message.");
                 }
-                inProgressEvent?.end({
-                    success: false,
-                });
+                inProgressEvent?.end(
+                    {
+                        success: false,
+                    },
+                    e
+                );
                 throw e;
             });
     };

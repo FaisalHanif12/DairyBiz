@@ -3,8 +3,8 @@
  * Licensed under the MIT License.
  */
 
-import { AuthError } from "@azure/msal-common";
-import * as BrowserAuthErrorCodes from "./BrowserAuthErrorCodes";
+import { AuthError } from "@azure/msal-common/browser";
+import * as BrowserAuthErrorCodes from "./BrowserAuthErrorCodes.js";
 export { BrowserAuthErrorCodes }; // Allow importing as "BrowserAuthErrorCodes"
 
 const ErrorLink = "For more visit: aka.ms/msaljs/browser-errors";
@@ -90,6 +90,8 @@ export const BrowserAuthErrorMessages = {
         "The provided prompt is not supported by the native platform. This request should be routed to the web based flow.",
     [BrowserAuthErrorCodes.invalidBase64String]:
         "Invalid base64 encoded string.",
+    [BrowserAuthErrorCodes.invalidPopTokenRequest]:
+        "Invalid PoP token request. The request should not have both a popKid value and signPopToken set to true.",
 };
 
 /**
@@ -331,6 +333,12 @@ export const BrowserAuthErrorMessage = {
         code: BrowserAuthErrorCodes.invalidBase64String,
         desc: BrowserAuthErrorMessages[
             BrowserAuthErrorCodes.invalidBase64String
+        ],
+    },
+    invalidPopTokenRequest: {
+        code: BrowserAuthErrorCodes.invalidPopTokenRequest,
+        desc: BrowserAuthErrorMessages[
+            BrowserAuthErrorCodes.invalidPopTokenRequest
         ],
     },
 };
