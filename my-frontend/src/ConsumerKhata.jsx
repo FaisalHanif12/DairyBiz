@@ -175,7 +175,7 @@ const ConsumerKhata = () => {
         <div className="custom-modal">
           <div className="custom-modal-content">
             <p>{message}</p>
-            <button onClick={onClose}>close</button>
+            <button onClick={onClose}>Close</button>
           </div>
         </div>
       </div>
